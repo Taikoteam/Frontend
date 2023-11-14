@@ -6,6 +6,31 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="scripts/settings.js"></script>
     <script src="scripts/web-sdk.js" onload="initSdk('Bots')"></script>
+    <script src="js/service.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Call updateDOM with the desired lugar value
+        updateDOM(0, "product1");
+        updateDOM(1, "product1");
+        updateDOM(2, "product1");
+        updateDOM(3, "product1");
+        updateDOM(4, "product1");
+        updateDOM(5, "product1");
+        updateDOM(6, "product1");
+        updateDOM(7, "product1");
+        updateDOM(8, "product1");
+        updateDOM(9, "product1");
+        updateDOM(10, "product1");
+        updateDOM(11, "product1");
+        updateDOM(12, "product1");
+        updateDOM(13, "product1");
+        updateDOM(14, "product1");
+        updateDOM(15, "product1");
+        updateDOM(16, "product1");
+        updateDOM(17, "product1");
+        // Add more calls as needed
+      });
+    </script>
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -112,7 +137,7 @@
         <!-- Swiper -->
         <div class="swiper mySwiper">
           <div class="swiper-wrapper" id="swiperWrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="product1">
               <div class="card">
                 <div class="card_top">
                   <img src="./image/items/item-1.png" alt="" class="card_img" />
@@ -148,10 +173,11 @@
                     </svg>
                   </div>
                 </div>
-                <div class="card_body">
-                  <h3 class="card_title">HAVIT HV-G92 Gamepad</h3>
-                  <p class="card_body">Gucci</h4>
-                  <p class="card_price">$120</p>
+                <div class="card_body" >
+                  
+                  <h3 class="card_title"></h3>
+                  <p class="dynamic_card_body"></h4>
+                  <p class="card_price"></p>
                   <div class="card_ratings">
                     <div class="card_stars">
                       <svg
@@ -213,16 +239,15 @@
                   </div>
                   <button
                     class="add_to_cart"
-                    data-id="1"
-                    data-title="HAVIT HV-G92 Gamepad"
+                    
                     data-image="./image/items/item-1.png"
-                    data-price="120">
+                    >
                     Add to Cart
                   </button>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="product2">
               <div class="card">
                 <div class="card_top">
                   <img src="./image/items/item-2.png" alt="" class="card_img" />
@@ -258,10 +283,11 @@
                     </svg>
                   </div>
                 </div>
-                <div class="card_body">
-                  <h3 class="card_title">AK-900 Wired Keyboard</h3>
-                  <p class="card_price">$80</p>
-                  <div class="card_ratings">
+                <div class="card_body">                  
+                <h3 class="card_title"></h3>
+                <p class="dynamic_card_body"></h4>
+                <p class="card_price"></p>
+                <div class="card_ratings">
                     <div class="card_stars">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -318,7 +344,7 @@
                           clip-rule="evenodd" />
                       </svg>
                     </div>
-                    <p class="card_rating_numbers">(88)</p>
+                    <p class="card_rating_numbers">(564)</p>
                   </div>
                   <button
                     class="add_to_cart"
@@ -331,7 +357,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="product3">
               <div class="card">
                 <div class="card_top">
                   <img src="./image/items/item-3.png" alt="" class="card_img" />
@@ -369,6 +395,7 @@
                 </div>
                 <div class="card_body">
                   <h3 class="card_title">IPS LCD Gaming Monitor</h3>
+                  <p class="dynamic_card_body">Gucci</h4>
                   <p class="card_price">$120</p>
                   <div class="card_ratings">
                     <div class="card_stars">
@@ -429,10 +456,17 @@
                     </div>
                     <p class="card_rating_numbers">(88)</p>
                   </div>
+                  <button
+                    class="add_to_cart"
+                    
+                    data-image="./image/items/item-1.png"
+                    >
+                    Add to Cart
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="product4">
               <div class="card">
                 <div class="card_top">
                   <img src="./image/items/item-4.png" alt="" class="card_img" />
@@ -470,6 +504,7 @@
                 </div>
                 <div class="card_body">
                   <h3 class="card_title">S-Series Comfort chair</h3>
+                  <p class="dynamic_card_body">Gucci</h4>
                   <p class="card_price">$120</p>
                   <div class="card_ratings">
                     <div class="card_stars">
@@ -530,6 +565,13 @@
                     </div>
                     <p class="card_rating_numbers">(88)</p>
                   </div>
+                  <button
+                    class="add_to_cart"
+                    
+                    data-image="./image/items/item-1.png"
+                    >
+                    Add to Cart
+                  </button>
                 </div>
               </div>
             </div>
@@ -593,7 +635,7 @@
         <!-- Swiper -->
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="product5">
               <div class="card">
                 <div class="card_top">
                   <img src="./image/items/item-5.png" alt="" class="card_img" />
@@ -630,6 +672,7 @@
                 </div>
                 <div class="card_body">
                   <h3 class="card_title">The north coat</h3>
+                  <p class="dynamic_card_body">Gucci</h4>
                   <p class="card_price">$120</p>
                   <div class="card_ratings">
                     <div class="card_stars">
@@ -693,7 +736,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="product6">
               <div class="card">
                 <div class="card_top">
                   <img src="./image/items/item-6.png" alt="" class="card_img" />
@@ -730,6 +773,7 @@
                 </div>
                 <div class="card_body">
                   <h3 class="card_title">RGB liquid CPU Cooler</h3>
+                  <p class="dynamic_card_body">Gucci</h4>
                   <p class="card_price">$120</p>
                   <div class="card_ratings">
                     <div class="card_stars">
@@ -793,7 +837,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="product7">
               <div class="card">
                 <div class="card_top">
                   <img src="./image/items/item-7.png" alt="" class="card_img" />
@@ -830,6 +874,7 @@
                 </div>
                 <div class="card_body">
                   <h3 class="card_title">Gucci duffle bag</h3>
+                  <p class="dynamic_card_body">Gucci</h4>
                   <p class="card_price">$120</p>
                   <div class="card_ratings">
                     <div class="card_stars">
@@ -893,7 +938,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="product8">
               <div class="card">
                 <div class="card_top">
                   <img src="./image/items/item-8.png" alt="" class="card_img" />
@@ -930,6 +975,7 @@
                 </div>
                 <div class="card_body">
                   <h3 class="card_title">Small BookSelf</h3>
+                  <p class="dynamic_card_body">Gucci</h4>
                   <p class="card_price">$120</p>
                   <div class="card_ratings">
                     <div class="card_stars">
@@ -993,7 +1039,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="product9">
               <div class="card">
                 <div class="card_top">
                   <img src="./image/items/item-1.png" alt="" class="card_img" />
@@ -1030,6 +1076,7 @@
                 </div>
                 <div class="card_body">
                   <h3 class="card_title">HAVIT HV-G92 Gamepad</h3>
+                  <p class="dynamic_card_body">Gucci</h4>
                   <p class="card_price">$120</p>
                   <div class="card_ratings">
                     <div class="card_stars">
@@ -1093,7 +1140,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="product10">
               <div class="card">
                 <div class="card_top">
                   <img src="./image/items/item-1.png" alt="" class="card_img" />
@@ -1130,6 +1177,7 @@
                 </div>
                 <div class="card_body">
                   <h3 class="card_title">HAVIT HV-G92 Gamepad</h3>
+                  <p class="dynamic_card_body">Gucci</h4>
                   <p class="card_price">$120</p>
                   <div class="card_ratings">
                     <div class="card_stars">
@@ -1222,7 +1270,7 @@
           <p id="demo"></p>
         </div>
         <div class="products">
-          <div class="card">
+          <div class="card" id="product11">
             <div class="card_top">
               <img src="./image/items/item-9.png" alt="" class="card_img" />
               <div class="card_top_icons">
@@ -1258,6 +1306,7 @@
             </div>
             <div class="card_body">
               <h3 class="card_title">HAVIT HV-G92 Gamepad</h3>
+              <p class="dynamic_card_body">Gucci</h4>
               <p class="card_price">$120</p>
               <div class="card_ratings">
                 <div class="card_stars">
@@ -1320,7 +1369,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card" id="product12">
             <div class="card_top">
               <img src="./image/items/item-10.png" alt="" class="card_img" />
               <div class="card_top_icons">
@@ -1356,6 +1405,7 @@
             </div>
             <div class="card_body">
               <h3 class="card_title">HAVIT HV-G92 Gamepad</h3>
+              <p class="dynamic_card_body">Gucci</h4>
               <p class="card_price">$120</p>
               <div class="card_ratings">
                 <div class="card_stars">
@@ -1418,7 +1468,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card" id="product13">
             <div class="card_top">
               <img src="./image/items/item-11.png" alt="" class="card_img" />
               <div class="card_top_icons">
@@ -1454,6 +1504,7 @@
             </div>
             <div class="card_body">
               <h3 class="card_title">HAVIT HV-G92 Gamepad</h3>
+              <p class="dynamic_card_body">Gucci</h4>
               <p class="card_price">$120</p>
               <div class="card_ratings">
                 <div class="card_stars">
@@ -1516,7 +1567,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card" id="product14">
             <div class="card_top">
               <img src="./image/items/item-12.png" alt="" class="card_img" />
               <div class="card_top_icons">
@@ -1552,6 +1603,7 @@
             </div>
             <div class="card_body">
               <h3 class="card_title">HAVIT HV-G92 Gamepad</h3>
+              <p class="dynamic_card_body">Gucci</h4>
               <p class="card_price">$120</p>
               <div class="card_ratings">
                 <div class="card_stars">
@@ -1614,7 +1666,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card" id="product15">
             <div class="card_top">
               <img src="./image/items/item-13.png" alt="" class="card_img" />
               <div class="card_top_icons">
@@ -1650,6 +1702,7 @@
             </div>
             <div class="card_body">
               <h3 class="card_title">HAVIT HV-G92 Gamepad</h3>
+              <p class="dynamic_card_body">Gucci</h4>
               <p class="card_price">$120</p>
               <div class="card_ratings">
                 <div class="card_stars">
@@ -1712,7 +1765,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card" id="product16">
             <div class="card_top">
               <img src="./image/items/item-14.png" alt="" class="card_img" />
               <div class="card_top_icons">
@@ -1748,6 +1801,7 @@
             </div>
             <div class="card_body">
               <h3 class="card_title">HAVIT HV-G92 Gamepad</h3>
+              <p class="dynamic_card_body">Gucci</h4>
               <p class="card_price">$120</p>
               <div class="card_ratings">
                 <div class="card_stars">
@@ -1810,7 +1864,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card" id="product17">
             <div class="card_top">
               <img src="./image/items/item-15.png" alt="" class="card_img" />
               <div class="card_top_icons">
@@ -1846,6 +1900,7 @@
             </div>
             <div class="card_body">
               <h3 class="card_title">HAVIT HV-G92 Gamepad</h3>
+              <p class="dynamic_card_body">Gucci</h4>
               <p class="card_price">$120</p>
               <div class="card_ratings">
                 <div class="card_stars">
@@ -1908,7 +1963,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card" id="product18">
             <div class="card_top">
               <img src="./image/items/item-16.png" alt="" class="card_img" />
               <div class="card_top_icons">
@@ -1944,6 +1999,7 @@
             </div>
             <div class="card_body">
               <h3 class="card_title">HAVIT HV-G92 Gamepad</h3>
+              <p class="dynamic_card_body">Gucci</h4>
               <p class="card_price">$120</p>
               <div class="card_ratings">
                 <div class="card_stars">
@@ -2143,5 +2199,6 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
+    
   </body>
 </html>

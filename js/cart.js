@@ -3,16 +3,19 @@ const CartTotal = document.querySelector(".cart-total");
 
 function displayCartItems() {
   const items = JSON.parse(localStorage.getItem("cart")) || [];
+  console.log(items)
 
   let cartTotal = 0; // Inicializar el total del carrito
 
   items.forEach((item) => {
     const cartItem = document.createElement("div");
+    console.log(item)
     cartItem.className = "cart_item";
     cartItem.innerHTML = `
+    <div class='title_padding'>
       <p class="cart_title">${item.title}</p>
-      <img src="${item.image}" alt="${item.title}" class="cart_img" />
-      <p class="cart_price">${item.price}</p>
+    </div>
+      <p class="cart_price">$${item.price}</p>
       <p class="cart_delete">Delete</p>
     `;
     CartItems.appendChild(cartItem);
