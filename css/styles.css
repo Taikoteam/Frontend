@@ -613,3 +613,33 @@ ul {
   font-size: 1.2em;
   font-weight: bold;
 }
+
+.cart-item {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: var(--colo-white-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1px;
+}
+
+.cart_product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1; /* Esto asegurará que el título tenga el espacio disponible para crecer */
+}
+
+.cart_title {
+  /* Tus estilos existentes para .cart_title, si los hay, o los ajustes que consideres necesarios */
+  margin-bottom: 1rem;
+  font-weight: 600; /* Suponiendo que quieras que el título sea negrita */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.cart_price {
+  /* Tus estilos existentes para .cart_price, si los hay, o los ajustes que consideres necesarios */
+  font-weight: 600; /* Suponiendo que quieras que el precio sea negrita */
+  color: var(--colo-primary); /* Esto usará el color rojo que has definido para el precio */
+}
