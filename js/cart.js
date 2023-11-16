@@ -12,6 +12,7 @@ function displayCartItems() {
     console.log(item)
     cartItem.className = "cart_item";
     cartItem.innerHTML = `
+    
       <p class="cart_title">${item.title}</p>
       <p class="cart_price">$${item.price}</p>
       <p class="cart_delete">Delete</p>
