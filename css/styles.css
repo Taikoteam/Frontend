@@ -597,6 +597,8 @@ ul {
 
 .cart_delete{
   cursor: pointer;
+  flex: 0;
+  text-align: right;
 }
 
 .cart-container {
@@ -608,38 +610,63 @@ ul {
   flex-grow: 1;
 }
 
-.cart-total {
-  margin-left: 20px; /* Ajusta el margen según sea necesario */
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
 .cart-item {
-  margin-top: 2rem;
+  /* margin-top: 2rem;
   padding: 1.5rem;
   background-color: var(--colo-white-2);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 1px;
+  border-radius: 1px; */
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite que los elementos se ajusten al siguiente línea si no hay espacio suficiente */
+  /* align-items: center; */
+  gap: 8px;
+  /* Espacio entre los elementos */
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: var(--color-white-2);
+  /*border-radius: 4px;*/
 }
 
 .cart_product {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-grow: 1; /* Esto asegurará que el título tenga el espacio disponible para crecer */
+  flex-grow: 1;
+  /* Esto asegurará que el título tenga el espacio disponible para crecer */
 }
 
 .cart_title {
   /* Tus estilos existentes para .cart_title, si los hay, o los ajustes que consideres necesarios */
-  margin-bottom: 1rem;
-  font-weight: 600; /* Suponiendo que quieras que el título sea negrita */
-  text-align: left; /* Alinea el texto a la izquierda */
+  /* margin-bottom: 1rem; */
+  /*font-weight: 600; /* Suponiendo que quieras que el título sea negrita */
+  /*text-align: left; /* Alinea el texto a la izquierda */
+  /* grid-template-columns: auto; */
+  /* ----- flex: 3; /* Ocupará 3 veces más espacio que las otras dos columnas */
+  flex: 1 1 40%;
+  /* Ocupará el 60% del espacio pero puede encogerse si es necesario */
+  font-weight: 600;
+  text-align: left;
+  word-wrap: break-word;
+  /* Asegura que las palabras se rompan si es necesario */
+  /*------ margin-right: 1rem; /* Asegura un espacio después del título */
 }
 
 .cart_price {
   /* Tus estilos existentes para .cart_price, si los hay, o los ajustes que consideres necesarios */
-  font-weight: 600; /* Suponiendo que quieras que el precio sea negrita */
-  color: var(--colo-primary); /* Esto usará el color rojo que has definido para el precio */
+  /*font-weight: 600; /* Suponiendo que quieras que el precio sea negrita */
+  /*color: var(--colo-primary); /* Esto usará el color rojo que has definido para el precio */
+  /*grid-template-columns: auto;*/
+  /*background-color: #00d656;*/
+  flex: 10 1 75%;
+  /* Ocupará espacio pero no tanto como el título */
+  font-weight: 600;
+  color: var(--color-primary);
+  text-align: center;
+  /*Este es para regresar al más aceptable*/
+  /* Alinea el precio a la derecha */
+  /* ---- margin-right: 1rem;*/
+  /* Asegura un espacio antes del botón de eliminar */
 }
