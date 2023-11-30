@@ -1,5 +1,5 @@
 // service.js
-const API_BASE_URL = 'http://localhost:8080';
+const API_BASE_URL = 'http://54.85.57.172:8080';
 
 async function getAllProducts() {
     try {
